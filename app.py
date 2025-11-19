@@ -4,16 +4,8 @@ import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 import pandas as pd
 import pickle
-import os
-os.environ['TF_USE_LEGACY_KERAS'] = '1'
 
-model = tf.keras.models.load_model('model.h5', compile=False)
-
-model.compile(
-    optimizer='adam',
-    loss='binary_crossentropy',
-    metrics=['accuracy']
-)
+model = tf.keras.models.load_model('model.keras')
 
 with open('onehot_encoder_geo.pkl','rb') as file:
     onehot_encoder_geo=pickle.load(file)
