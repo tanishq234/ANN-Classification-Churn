@@ -1,4 +1,4 @@
-tensorflow>=2.20.0
+tensorflow[and-keras]==2.17.1
 pandas
 numpy
 scikit-learn
