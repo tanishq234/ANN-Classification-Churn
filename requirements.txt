@@ -1,7 +1,8 @@
-tensorflow[and-keras]==2.17.1
-pandas
-numpy
-scikit-learn
-tensorboard
-matplotlib
+tensorflow==2.15.0
 streamlit
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+protobuf==3.20.3
